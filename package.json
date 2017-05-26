@@ -1,0 +1,26 @@
+{
+  "name": "adpentrance",
+  "version": "1.0.0",
+  "description": "App Developer Entrance Project",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "express": "^4.15.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redacademy/adp-entrance.git"
+  },
+  "author": "Plinio Prado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redacademy/adp-entrance/issues"
+  },
+  "homepage": "https://github.com/redacademy/adp-entrance#readme"
+}
