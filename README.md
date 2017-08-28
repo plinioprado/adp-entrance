@@ -1,73 +1,32 @@
-# App Developer Entrance Project
+# Quizz application in plain JS ES5 
 
-Create a client-side quiz app based on the provided requirements, data and views.
+Client-side quiz app based on the provided coded in Javascript ES5 with:
+* Welcome Screen
+* Quiz View
+* Completion View
 
+This project was the test that allowed the application the Application Development Profesional course at Red Academy Vancouver, without needing to attend the Web Application course before. The original full requirements and instructions are in README2.md.
 
-## Requirements
+## Stack
 
-- clone this repo as a starter
-- use only HTML/CSS/JS
-- use any frameworks or libraries of your choice (ex: JQuery, React, Bootstrap)
+* HTML5/CSS3
+* Bootstrap 3.3.7
+* Javascript ES5
+* Node/Express exclusively for the static local test server
 
-## Quiz Data
+# Comments
 
-Quiz data can be found in [src/quiz.json](./src/quiz.json). This content will be loaded when a user starts a quiz.
+ * No back and other navigation buttons added to avoid quiz cheating
+ * No routing through url for the same reason
+ * Performed additional test in internet provider Linux server
 
-For every question there is one correct answer (with a value of `true`) and three incorrect answers with a value of `false`. The `content` field contains a possible answer.
+# Tests
 
-```js
-{
-  quizzes: [{
-    title: 'Quiz 1',
-    questions: [{
-      question: 'Question 1?'
-      answers: [{
-        content: 'Answer 1.',
-        value: false // wrong answer
-      }, {
-        content: 'Answer 2.',
-        value: true // correct answer
-      }]
-    }]
-  }]
-}
-```
+* Clone the rep to a Node server
+* Run 'node install' to install the test server
+* Run 'node testserver' to start test server
+* Open browser on localhost:3000
 
-## Views
+# Deploy
 
-Feel free to be creative and style your views. As a bare minimum, please create the following three views:
-
-##### 01 - Welcome Screen
-
-![01 - Welcome View](./diagrams/quiz-01.png)
-
-The view presented when the user starts the app.
-
-- load either quiz 1 or quiz 2 on click
-
-##### 02 - Quiz View
-
-![02 - Quiz View](./diagrams/quiz-02.png)
-
-While the user is selecting their answers:
-
-- display all 3 questions with possible answers
-- provide feedback when a user clicks on an answer. Consider styling correct or wrong answers with green or red button colors
-- show the next question after a time delay of 2 seconds
-- track the number of correct answers in the top right corner
-
-##### 03 - Completion View
-
-![03 - Completion View](./diagrams/quiz-03.png)
-
-When the user has finished answering all three questions:
-
-- display the final score
-- show a "pass" message if more than 50% of the answers were correct, show a "fail" message otherwise
-
-## Upon Project Completion
-
-- push your finished app to Github
-- provide your username and repo to an instructor
-
-Good luck!
+The content of the 'src' folder is ready to be copied to a webserver, all required third party assets already in 'src/assets'.
